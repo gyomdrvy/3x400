@@ -73,6 +73,11 @@ th{background:#dcecff;color:#10385f;font-weight:800}td,th{padding:12px}tr:nth-ch
 .brand img{border-radius:20px;object-fit:cover}
 @media(max-width:1050px){.hero{min-height:110px;height:110px;padding:12px 20px}.hero img{width:64%}}
 @media(max-width:700px){.hero{min-height:96px;height:96px;padding:11px 14px}.hero h1{font-size:25px}.hero img{width:66%;opacity:.60}}
+
+/* V8 : conserver l’intégralité des silhouettes, sans recadrage vertical */
+.hero img{width:68%;height:100%;object-fit:contain;object-position:right center;max-width:none;top:0;right:0;mask-image:linear-gradient(to right,transparent 0%,black 20%);-webkit-mask-image:linear-gradient(to right,transparent 0%,black 20%)}
+@media(max-width:1050px){.hero img{width:66%;object-fit:contain;object-position:right center}}
+@media(max-width:700px){.hero img{width:67%;object-fit:contain;object-position:right center;opacity:.58}}
 </style></head><body><div class="app-shell"><aside class="sidebar"><div class="brand"><img src="icon-180.png" alt="Logo EPS"><div><strong>EPS</strong><strong>Demi-fond</strong></div></div><nav id="nav" aria-label="Navigation principale"></nav><div class="sidebar-bottom"><span class="save-dot"></span><span id="saveState" class="small">Sauvegarde locale</span><button onclick="download('sauvegarde_toutes_classes.json',JSON.stringify(data,null,2),'application/json')">☁ Sauvegarder</button></div></aside><div class="workspace"><header class="hero"><div class="hero-text"><span class="hero-eyebrow">EPS · PERFORMANCE & PROGRESSION</span><h1>EPS Demi-fond</h1><p>Chronométrer · Évaluer · Suivre les progrès</p></div><img src="track-banner.png" alt="Illustration de piste d’athlétisme" /></header><div class="mobile-nav-label">Navigation <button onclick="document.body.classList.toggle('nav-open')" aria-label="Afficher ou masquer le menu">☰ Menu</button></div><main id="app"></main><footer>Les données sont enregistrées sur cet iPad. Pense à exporter une sauvegarde JSON régulièrement.</footer></div></div><script>
 'use strict';
 const KEY='eps_demi_fond_v1';const tabs=['Classes','Course 1','Pelotons','Course 2','Course 3','AFLP','Progression','Bilan'];let tab=0;
