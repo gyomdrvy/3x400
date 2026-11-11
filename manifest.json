@@ -1,1 +1,23 @@
-{"name":"EPS Demi-fond — Évaluation","short_name":"EPS Demi-fond","start_url":"./","display":"standalone","background_color":"#f1f5fa","theme_color":"#102b4e","lang":"fr"}
+{
+  "name": "EPS Demi-fond — Chronos et progression",
+  "short_name": "EPS Demi-fond",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#edf4fb",
+  "theme_color": "#12315a",
+  "lang": "fr",
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
